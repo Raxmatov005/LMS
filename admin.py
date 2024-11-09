@@ -1,7 +1,7 @@
 from fastapi import APIRouter, status, HTTPException
-
+from model import model
 from database import db_dependency
-from model.model import Users, Roles, LessonRatings, CourseRatings, Enrollments
+from model import  Users, Roles, LessonRatings, CourseRatings, Enrollments
 from routers.users import user_dependency
 from utils import is_admin
 
